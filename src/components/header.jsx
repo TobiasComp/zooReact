@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./header.css";
+import Navbar from "./navbar";
 
 class Header extends Component {
   render() {
@@ -11,6 +12,7 @@ class Header extends Component {
             alt=""
           />
         </div>
+        <Navbar activePanel={this.props.activePanel}/>
         <div className="logon-user">hello ariel</div>
       </div>
     );
