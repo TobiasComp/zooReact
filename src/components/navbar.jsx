@@ -6,15 +6,11 @@ class Navabr extends Component {
   render() {
     return (
       <ul className="nav-ul">
-        <li onClick={this.navTo("domestics")}>Domestic</li>
-        <li onClick={this.navTo("wilds")}>Wild</li>
-        <li onClick={this.navTo("birds")}>Birds</li>
+        <li onClick={() => this.props.onChangePanel("domestic")}>Domestic</li>
+        <li onClick={() => this.props.onChangePanel("wild")}>Wild</li>
+        <li onClick={() => this.props.onChangePanel("bird")}>Birds</li>
       </ul>
     );
-  }
-
-  navTo(panelName) {
-    // this.props.activePanel
   }
 }
 

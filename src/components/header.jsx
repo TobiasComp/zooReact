@@ -12,7 +12,10 @@ class Header extends Component {
             alt=""
           />
         </div>
-        <Navbar activePanel={this.props.activePanel}/>
+        <Navbar
+          activePanel={this.props.activePanel}
+          onChangePanel={(newPanel) => this.props.onChangePanel(newPanel)}
+        />
         <div className="logon-user">hello ariel</div>
       </div>
     );
